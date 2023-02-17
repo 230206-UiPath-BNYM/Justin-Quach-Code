@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Dictionary" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="829,2173" sap2010:WorkflowViewState.IdRef="Dictionary_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Dictionary" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="829,1723" sap2010:WorkflowViewState.IdRef="Dictionary_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -69,13 +69,9 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Dictionary" sap:VirtualizedContainerService.HintSize="638,2108" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Dictionary" sap:VirtualizedContainerService.HintSize="540,1658" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="Phonebook">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="New Dictionary(Of String, String)()" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Default="[New Dictionary(Of String, String)()]" Name="Phonebook" />
       <Variable x:TypeArguments="x:Boolean" Default="False" Name="tempThere" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -83,11 +79,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeCode ContinueOnError="{x:Null}" Code="phonebook.Add(&quot;NotWalmart&quot;, &quot;1&quot;)&#xD;&#xA;phonebook.Add(&quot;NotTarget&quot;, &quot;2&quot;)&#xD;&#xA;phonebook.Add(&quot;NotCostco&quot;, &quot;3&quot;)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="576,165" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="phonebook.Add(&quot;NotWalmart&quot;, &quot;1&quot;)&#xA;phonebook.Add(&quot;NotTarget&quot;, &quot;2&quot;)&#xA;phonebook.Add(&quot;NotCostco&quot;, &quot;3&quot;)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="478,165" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
       <ui:InvokeCode.Arguments>
-        <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="phonebook">
-          <VisualBasicReference x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="Phonebook" />
-        </InOutArgument>
+        <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="phonebook">[Phonebook]</InOutArgument>
       </ui:InvokeCode.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -96,53 +90,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeCode>
-    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="576,612" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[Phonebook]">
-      <ui:ForEach.Body>
-        <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="currItem" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,487" sap2010:WorkflowViewState.IdRef="Sequence_4">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[currItem.Key = &quot;NotSafeway&quot;]" sap:VirtualizedContainerService.HintSize="478,376" sap2010:WorkflowViewState.IdRef="If_1">
-              <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_1">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:Boolean">[tempThere]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                </Sequence>
-              </If.Then>
-              <If.Else>
-                <Sequence sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Sequence>
-              </If.Else>
-            </If>
-          </Sequence>
-        </ActivityAction>
-      </ui:ForEach.Body>
-    </ui:ForEach>
-    <If Condition="[Not tempThere]" sap:VirtualizedContainerService.HintSize="576,439" sap2010:WorkflowViewState.IdRef="If_2">
+    <uasc:ExistsInCollection x:TypeArguments="x:String" Index="{x:Null}" Collection="[Phonebook.Keys]" DisplayName="Exists in collection" Exists="[tempThere]" sap:VirtualizedContainerService.HintSize="478,292" sap2010:WorkflowViewState.IdRef="ExistsInCollection`1_2" Item="NotSafeway" />
+    <If Condition="[Not tempThere]" sap:VirtualizedContainerService.HintSize="478,439" sap2010:WorkflowViewState.IdRef="If_2">
       <If.Then>
         <Sequence sap:VirtualizedContainerService.HintSize="400,163" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
@@ -153,9 +102,7 @@
           </sap:WorkflowViewStateService.ViewState>
           <ui:InvokeCode ContinueOnError="{x:Null}" Code="phonebook.Add(&quot;NotSafeway&quot;, &quot;4&quot;)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
             <ui:InvokeCode.Arguments>
-              <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="phonebook">
-                <VisualBasicReference x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="Phonebook" />
-              </InOutArgument>
+              <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="phonebook">[Phonebook]</InOutArgument>
             </ui:InvokeCode.Arguments>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -177,15 +124,12 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Phonebook.Remove(&quot;NotCostco&quot;)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="576,165" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Phonebook.Remove(&quot;NotCostco&quot;)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="478,165" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
       <ui:InvokeCode.Arguments>
-        <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="phonebook">
-          <VisualBasicReference x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="Phonebook" />
-        </InOutArgument>
+        <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="phonebook">[Phonebook]</InOutArgument>
       </ui:InvokeCode.Arguments>
     </ui:InvokeCode>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="576,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Phonebook.Count.ToString]" />
-    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="576,326" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Phonebook]">
+    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="478,326" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Phonebook]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
           <ActivityAction.Argument>
