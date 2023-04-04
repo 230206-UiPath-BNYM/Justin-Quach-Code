@@ -1,0 +1,117 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="836,795" sap2010:WorkflowViewState.IdRef="Sequence1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence1" sap:VirtualizedContainerService.HintSize="546,730" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: OAuth 2.0 Playground" sap:VirtualizedContainerService.HintSize="484,619" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d80631d7-92ce-4c0e-94d3-0eb715a463cf" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,402" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="temp" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Access token'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="d80631d7-92ce-4c0e-94d3-0eb715a463cf" TextString="[temp]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://developers.google.com/oauthplayground/#step2&amp;apisSelect=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube%2Chttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.force-ssl%2Chttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly&amp;auth_code=4%2F0AWtgzh6HrhrtZulCee7fL-a0od1YbXXj5T8FjmgXiEYyBydrjEUzF0rIk_qa8-mUTkVNBg&amp;refresh_token=1%2F%2F04tFvWmtn2xGHCgYIARAAGAQSNwF-L9IrE5UdA-YdVtTR7UZuurzHnUjVZnFwnbfnvHEaXnIKd72dkltyX3W_EFQQfCictuGCJIU&amp;access_token_field=ya29.a0AVvZVsrAVuio7trG7T0xy8MSy2YMoToZCAtUuiZepMS8sCZFYXwLi4QedPYYrUUN4uECGD4eEisK7Y9-6bQ4En1L4ppWUcZVVlmYaGJlADTP05shsejyrgdbsNtTJUaQZqZoZA1DdM9lspvLVboqYA7SIdOxaCgYKAYgSARISFQGbdwaICOh_GWSjK8EMOnZGobKHEw0163&amp;url=https%3A%2F%2F&amp;content_type=application%2Fjson&amp;http_method=GET&amp;useDefaultOauthCred=checked&amp;oauthEndpointSelect=Google&amp;oauthAuthEndpointValue=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth&amp;oauthTokenEndpointValue=https%3A%2F%2Foauth2.googleapis.com%2Ftoken&amp;oauthClientId=342953150675-h2q7svf3pk2to211qjc1u3fjrqa99cf2.apps.googleusercontent.com&amp;expires_in=3598&amp;oauthClientSecret=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&amp;access_token_issue_date=1679407945&amp;for_access_token=ya29.a0AVvZVsrAVuio7trG7T0xy8MSy2YMoToZCAtUuiZepMS8sCZFYXwLi4QedPYYrUUN4uECGD4eEisK7Y9-6bQ4En1L4ppWUcZVVlmYaGJlADTP05shsejyrgdbsNtTJUaQZqZoZA1DdM9lspvLVboqYA7SIdOxaCgYKAYgSARISFQGbdwaICOh_GWSjK8EMOnZGobKHEw0163&amp;includeCredentials=checked&amp;accessTokenType=bearer&amp;autoRefreshToken=checked&amp;accessType=offline&amp;prompt=consent&amp;response_type=code&amp;wrapLines=on" DesignTimeRectangle="18, 630, 470, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'The access'" FullSelectorArgument="&lt;webctrl id='accessTokenExpired' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='accessTokenExpired' tag='P' type='' class='' aaname='                                 The access token .                             ' /&gt;" Guid="9a278c93-481d-40d8-befe-cbac820c9077" InformativeScreenshot="2009288fb2d72abc8ad84a4cb5c1a6b3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='OAuth 2.0 Playground' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="18, 572, 81, 15" ElementType="Text" FriendlyName="'Access token'" FullSelectorArgument="&lt;webctrl parentid='leftContainer' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='leftContainer' tag='LABEL' type='' class='' aaname='Access token:' check:innerText='Access token:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHQSURBVFhH7VWLrcMgDOwszMMuzS7NKpW6StVheOAPsY3Jq5TQ9xEnoTaGM+fDJJc0cTqmqQMwTR2AaeoAuKa+bjGFENP6pMC/wCutMaR4e9HzODimls1jWq7xIwKOAhogrln1d/hJU+8Liiy/YUkPCv9W/AlTH1fe+JGWENJyx3jFc00xxwMM/YooXIzncRXH8S5HmqM4jo4COHjLRd0tz5hK3Drf0whxvLmcU9YGhyprzTCmFkFbwpZgjBbdrDtGFtDn1FsBE2gwcpCvC/ZvTX/fDNiL6xFzUgNgRyObzT7Qc13rQJtakjUdJjZvxDBMMRKFIzuQ1oIoyOcJxDWa50OZSl213QSpi/7n70VTw57GJqc5AAcX+s2gQsqpmMFm6a6Q6G8EHJNP5mRjeWw5jJ6OwUpTc+hkpDC1dG6sMcSuxkOm2q4k7ItmSPEGTRf0gcV5+bEQL7/S906nekbtaTxiKogzL1yASmoSijlVXAZ8gCCfx8Fny9mKs8LREK8QncMcLjQBa9dzmtfXeMDUvYUoxr6o+YpIzrtfctlxiiPFG4574AV1HXc41sK8TZ8xnNbV555GiPdN9ZqRTJ04E9PUAZimDsA0dQCmqacjpS/YAeeeewjn6QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[temp]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAvCAYAAAClgknJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAA30SURBVGhDzdoJtNfTFgfwUFIJmcoYMs9D5kxlCJkiUzJec2YyS8iQF0pahkhZxmQRSkJXiC4RohBCMpUilaTO259z76/+5RlfnrfXOus3/H+/c7577+8ezu/ean+jVN92221rrbbaaovF+UKVt/5P5brrrqsbo/EFF1xQduqpp3YuKyvr06ZNm+EHHXTQJ3vttdeYJk2alG+wwQa9GjRo0H7RRRdtGa80irFwfvmfktdee63G8OHDm5aXl3d/7LHHRj/yyCMzBw4cmIYOHZrefPPN9PHHH6ePPvooH9955500ePDgdPfdd6ezzz47NWvWbPLSSy89JKZpF2PtPOH/Sj744IOaX331Vetvv/12KHBffPFFmjBhQpo0aVKaMmVKmj59evr+++/TAw88kBUYMGBAeuutt1IhM2fOTJ9++ml6++2301VXXZXWW2+9STFtzxhb5AX+Tunfv/9OFRUVQz777LM0ceLE9PXXX6e4ToMGDcoKuDd58uQUCqYDDzwwW/2MM85Id9xxRwY/e/bsNHLkyLTnnnumc889N4UX83u33XZbWn/99afGEl1iNMiLLUjp2rVrzdtvv71DWHP6mDFjEgXGjRuXgV577bXpmGOOSU899VT67rvvUngmffPNN+mII45I8U7+7b777svgZ8yYkRU5+eST04477phuuummfE0mTvw2RQylOnXqjIolm1euvACkY8eO9a+55pp+TzzxRKYE8OPHj5+jxJVXXpnOOuusdPzxx6chQ4ZkJX744Yf0+OOPpwjodNlll+Vnf/755zzGjh2bIqDT888/n4FTrBAKPvPMM2nttdeeFkufVYngv5AA0PDCCy8c9uSTT6YI2AzogAMOSA8//HBWQgycf/75qXv37hnwCy+8kL3CS6jy4osvppdeeim9/vrr6cMPP0xTp07NNLvnnntynMyaNWuOAg899FDabbfd8rW5d9pppxQQronx11Jwq1atGpx00kkVwAo6nD366KNTpMu06667pvfeey9bE8jPP/88ffnll5nz4a102GGHpe222y5ttNFGaa211kqNGjXK502bNs3zsP60adMycOK9oE42zv3335/69euXqWidgHJFJaI/Ifvss0/tli1bDujRo0cGynosHfdSeCQvFNkoU4hFXxk2LPMa2Bo1alg0j8j581wXY5FFFklbbbVV9oSsdOmll+Zgp6B3pFsiSWy55Zaz450TY/xx2WGHHTrhLhrI4aNGjcoZQ5ABGrk/5/q+ffum1q1bpyWXXHIegAsvvHBaYokl0sYbb5xWWmmlVLNmzVS9evV5ninGHnvskdeRvSITpauvvjqDL+Tdd99NK6ywwpR4dtsYvy8xSbOw8AzcNbF87Th69OjMebQR0CeeeGJadtll5wBZZpll0iqrrJLP69Wrl6ICZ1oAHwZJiy++eP6Nl0rfM1ZcccVMGyn5p59+qoI+V9SU8Nqr8eziMX5d6tevX2fDDTesQB2gR4wYkS1NCZYw5PSopNnK8Uq2LCtHZc1WX3311bMleSVaB9bL95dffvnskZVXXjkr6B30WmihhfI8devWzYmACOTS7OT8kEMO8dx5cP6qxAJlAlXGMd54442shEqKRt26dcPJOcANQAXoUkstle9TYJtttknRB2W6nXDCCSliKj/TsGHD/Myqq66aotHLoM1RxIm5yssHZ9ClGYqgcqwxPp5bMcYvReBGEI1QdKS9V199dY4SLN+7d+8M3mKGhaMNkLNzUKIFoE8//XSuA/OLitunT58cvJ5l+XXWWScr5v1CiTXXXDNnNeDnVwJt45mLM+D5Zffdd29xyimnzH755ZfTsMgq+EgJHpD2ZAg8rlWrVrY2KqDBpptumoJ6OYuUpsZfE31TrJWtv9lmm2WPUUisLLbYYlkJXiMKHyUMwqCBQaWum0GXSvQuvfUkgJcqgT4dOnTIIGvXrp0VQAE0EaRF/lak5he5/Mcff6y6misqM+8BzBjbb799jhHX5mcoxiOFEsV5FDtpdY9K1FUSXK0XRWusiqsdNl555ZU8ifZg3333zfwsUiOrWXiTTTbJbcFzzz2XFygEX8WAYKbogw8+WPXLXNGCMATPymDig1I8I0EUXpCVSpXQPwV9b6qCXilBnSaR92fJ79oB1ZUSXKbYbLHFFlmB2F1lBfDUeRGsilEhWoSdd955TqYRI2ussUYuiKUiTUufsdnJimy++eaZUqhprXXXXTe3FMAXShBGjecrAnaNSvQhUd7b6meAZ3FHNBLAWgeADa5meYG39957Z7dr5DRwhfDGcsstl58TsJTBcbWjVFRyqZf1FcPGjRtnD2tBKGRuHS5hIEoIaDEUdWVCUG3lKvjVql1yySXd7r333hysFEAfQLp06ZJOO+207F45nTVlIovwAM8AqVBpm7k3vJktzjueKZRHq1IRY+bdZZdd8rxbb711Pudh8cYTqKvAFfFVeCNa9VnxzDZV8KtV69SpU7/YEmbaPPvss7nH10gBIXWxiAlxmuVxFThtACVQhSJRBPOzwOgsFTHZ5ZxzzskASoVxeBJIFdz7zZs3z0qhFqVRSqo99NBDs0GLlNquXTsYDs3g7W1vvfXWkbGvTTfffHPeLXmJVaQ7HgDeZAA7x9f99tsvd5mek4VYjlLe5yF0AMbOTA0oFXWC11jaOzY/YoHCNjpSs5ZDS80o1mA0qVpj2blzZ0a6NCsQfXitKDCf2JB4yWBpLylMGrgiQ1DCkDlYHmgcZz3WFCOGzIT3uC2Vzi8XXXRRtjKAngfePM4drWXop2AxXMt+vIuu4bl/ZQV4IHZBI7XKHmB9g3VbtGiRgl7ZnRRjjYMPPjiD9ywv6IucU8rz3qPwxRdf/IvaIBWip99ZG0D04AXg7SOsXdBHhmPIAlOBy7rHHntspQdIVNt+PICLHjCAElRaCNoLXh6hBCuYBJXUAnGht7Gwe7169aqCPFfsG04//fScebwDHM/xIiXEjNTJAzISiqGWhGBeo8DmfsxVGQMkdlzd2rdvn60CeDGA1SHiNGBcjp+CTZA7d885S+2///553zC/yPk8xYIsWwQs6jCG91y7z0jmpeCRRx6ZkwIlDJgoEJluVnh4bhaaMmVKWwVLqvQCF3Or7NKzZ888UREDeM06rIV2LEdR33jmD1Y5+4orrsjPsqAEAKxAleeB1v1SDAVx2xrWskuToWCAxYBNrMWcE6I+za0DsXVrEjVglocEl4UMBUlLfMMNN+TAxHHgDbThbjwuCk6pqOLAsbDneIDFAfU+yqEPDzIEy3sWVT2nKwa2FA8D8/add95ZEX3b3EocDVu92MCMtZDsgUpe9IJJ7IjEQ8FP4C3K1bfccksV5HnFFlEG8rXO0GKUHu13KYKabdq0mZPZxIcEcNddd+UqDUcxXPs02b9//3l7IRKlvbeUqZni3mLoS2zkpT6LtWrVKrveYqyog/0rUnx1UCdYnQKMIt58G1JP9FNqhQELJSLtzw7vztuNktg2tohqPJvVeQF9DFkDR8UCy3Mv3luAR3x9+yvi+xHgiiOuMww6qbL6L+DnN6T4CUOPimbzl/uByB61owcaIfqBRqNimEz+RxcKoJOcrdXo2LFj3m7atdlHO+p7io8Bhj2Fa8Me27XmTgygUbTyOUYocuONN+YgBroUA/po96OW/OcdGYkOtEzeFzDcJQMYzk143nnn5Q9XlGAtFuGJIjhRCwUUJcFdBKWWhLIoKAO5j+tAy3COPBFNZZ7LWsXaBiZYJ9rr8eG8larg/lICfJ3IRhXSGd5JW8UoMoHvRZQA2ML6IAAVI+fu4TVK4LjswlsAAHn44Yfne84FL0Wd8wLPMlbpuoqrISuNHTv2t79KkNiUN+vbt+8M2Qbg0hysmIgHnrB/ANSiZWVlGQilVEn3UcM5C7O6APWc+AHYb2LKeVGVrVfUoGKgz3HHHafVrxg8ePBvfxcqZNCgQZ3wXfFR/YpyzpIAsBIAPgGq4KgEPIuztGsFj1fw2rGwtt9RjdcohnJFs4Zuzq2n4lKGIXr06DElEswf+zJHIjXWjuI0QBU1mUaOlfQyQKKKhaRSlFIntOJab5YG0LGwtnPWRh3e0UcBrzgyjCOgFJDZKOO+mIm98+zA8+e+jZLItw0GDBhQoaiYEACB27Zt2+yJYhEeEpTAa0f8SYlCXbt2zRt3tcW20+8qMw8AJgMJZD2UawoU7TmFtBSK1vXXX//nv04XErHQMDwxDBCAZQhUUJ31N7zgiAZigadkG5aWdgWy9gO9cBxgRjCPrw5+8775zOE3yvCEeIkC+tf/PlBI7NTqDxw4sJ+Ki7dAa95Yy5EFFR/f/SnpnkDHd9+T3AeIVSkgw9linnnmmZlewGtJ/GZOykWmmhZZ6b//C00h0XvUjD1phwik6ehQAMJj1JCR8B4IrjfseWUryYC1gWNdnnCNWmLEPRmv2AOEV0aF5xbc38hKxV8py8vLh/griq8PAtqm365NgANBuaJHEvi+97M2pYrChiqCGW08yxBBvalx3SViYMH/lbJU/MUyKnbraDuG+hCgb4ntXU6XFJCZWJlnBKydnnjwm/hQpSmAjrJRxMukoFLPoM7f/3fiUrGXjr6m6fvvv989epzR0WDNpBDq+HMUrqu6AlkdcI069hcxJodiQ4466qh28fs6VVP+czJ69Oi60aY0jl6/bNy4cZ2jgesTVBv+6KOPfhLFbkzEQXmkw17R+LW//PLLW0ZsNIrjP/u/Er8nUfarDx06tFYc/8b/VqlW7d+HLLU6Y5LC8gAAAABJRU5ErkJggg==" InformativeScreenshot="ae0215a69bf301bec6104cf568739f5f.jpg" Selector="&lt;html app='msedge.exe' title='OAuth 2.0 Playground' /&gt;" Url="https://developers.google.com/oauthplayground/#step2&amp;apisSelect=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube%2Chttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.force-ssl%2Chttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly&amp;auth_code=4%2F0AWtgzh6HrhrtZulCee7fL-a0od1YbXXj5T8FjmgXiEYyBydrjEUzF0rIk_qa8-mUTkVNBg&amp;refresh_token=1%2F%2F04tFvWmtn2xGHCgYIARAAGAQSNwF-L9IrE5UdA-YdVtTR7UZuurzHnUjVZnFwnbfnvHEaXnIKd72dkltyX3W_EFQQfCictuGCJIU&amp;access_token_field=ya29.a0AVvZVsrAVuio7trG7T0xy8MSy2YMoToZCAtUuiZepMS8sCZFYXwLi4QedPYYrUUN4uECGD4eEisK7Y9-6bQ4En1L4ppWUcZVVlmYaGJlADTP05shsejyrgdbsNtTJUaQZqZoZA1DdM9lspvLVboqYA7SIdOxaCgYKAYgSARISFQGbdwaICOh_GWSjK8EMOnZGobKHEw0163&amp;url=https%3A%2F%2F&amp;content_type=application%2Fjson&amp;http_method=GET&amp;useDefaultOauthCred=checked&amp;oauthEndpointSelect=Google&amp;oauthAuthEndpointValue=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth&amp;oauthTokenEndpointValue=https%3A%2F%2Foauth2.googleapis.com%2Ftoken&amp;oauthClientId=342953150675-h2q7svf3pk2to211qjc1u3fjrqa99cf2.apps.googleusercontent.com&amp;expires_in=3598&amp;oauthClientSecret=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&amp;access_token_issue_date=1679407945&amp;for_access_token=ya29.a0AVvZVsrAVuio7trG7T0xy8MSy2YMoToZCAtUuiZepMS8sCZFYXwLi4QedPYYrUUN4uECGD4eEisK7Y9-6bQ4En1L4ppWUcZVVlmYaGJlADTP05shsejyrgdbsNtTJUaQZqZoZA1DdM9lspvLVboqYA7SIdOxaCgYKAYgSARISFQGbdwaICOh_GWSjK8EMOnZGobKHEw0163&amp;includeCredentials=checked&amp;accessTokenType=bearer&amp;autoRefreshToken=checked&amp;accessType=offline&amp;prompt=consent&amp;response_type=code&amp;wrapLines=on" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
